@@ -55,15 +55,6 @@ Mohit Tiwari.
 SARMF: Smart Contract Automated Remediation and Mitigation Framework.  
 DOI: 10.17504/protocols.io.bp216eyxdgqe/v1  
 
-@software{tiwari2026sarmf,
-  author       = {Tiwari, Mohit},
-  title        = {SARMF – Smart Contract Automated Remediation and Mitigation Framework},
-  year         = 2026,
-  publisher    = {Zenodo},
-  version      = {v1.0.1},
-  doi          = {10.5281/zenodo.18754015},
-  url          = {https://doi.org/10.5281/zenodo.18754015}
-}
 ---
 
 ## License
