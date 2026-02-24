@@ -11,8 +11,8 @@ A reproducible security engineering workflow for Ethereum-compatible smart contr
 4. Report gas overhead vs security improvement
 
 ## Join the Lab
-- Student Intake Form: (paste your Google Form link here)
-- Weekly review: Friday 4:10 PM (Lab Projector Session)
+- Student Intake Form: https://forms.gle/ddDxSV348SRJsR9A9
+- Weekly review: Friday (Lab Projector Session)
 
 ## Evidence & Outputs
 - Monthly Zenodo version releases (DOI-backed)
