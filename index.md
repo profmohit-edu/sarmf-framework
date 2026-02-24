@@ -18,3 +18,16 @@ A reproducible security engineering workflow for Ethereum-compatible smart contr
 - Monthly Zenodo version releases (DOI-backed)
 - GitHub Issues = tasks, GitHub Discussions = weekly logs
 - PDF reports archived in Releases
+
+## Student Submission Workflow
+
+Raw Analysis Upload (Private):
+https://drive.google.com/drive/folders/1dU-Uny-ylyc2MOOnnScLYKyc7Q_HNnor?usp=sharing
+
+Students must upload:
+- Tool output JSON
+- Patch diff files
+- Gas measurement CSV
+- Short summary PDF
+
+Only validated results will be published.
