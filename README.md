@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18754015.svg)](https://doi.org/10.5281/zenodo.18754015)
+
 # SARMF – Smart Contract Automated Remediation and Mitigation Framework
 
 ## Overview
