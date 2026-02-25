@@ -1,0 +1,11 @@
+contract_id,contract_name,swc_id,solidity_version,slither_issues_pre,mythril_issues_pre,unique_issues_pre,critical_pre,high_pre,medium_pre,low_pre,slither_issues_post,mythril_issues_post,unique_issues_post,critical_post,high_post,medium_post,low_post,reduction_percent,patch_summary,notes
+SC01,Reentrancy,SWC-107,,,,,,,,,,,,,,,,,
+SC02,Overflow,SWC-101,,,,,,,,,,,,,,,,,
+SC03,Unchecked Call,SWC-104,,,,,,,,,,,,,,,,,
+SC04,Access Control,SWC-105,,,,,,,,,,,,,,,,,
+SC05,DOS,SWC-113,,,,,,,,,,,,,,,,,
+SC06,Timestamp Dependence,SWC-116,,,,,,,,,,,,,,,,,
+SC07,tx.origin Auth,SWC-115,,,,,,,,,,,,,,,,,
+SC08,Front Running,SWC-114,,,,,,,,,,,,,,,,,
+SC09,Constructor Issue,SWC-118,,,,,,,,,,,,,,,,,
+SC10,Input Validation,SWC-123,,,,,,,,,,,,,,,,,
