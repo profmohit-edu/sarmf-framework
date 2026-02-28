@@ -1,0 +1,399 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "distribute",
+            "source_mapping": {
+              "start": 188,
+              "length": 145,
+              "filename_relative": "contracts/SC05_DOS/DOSSample.sol",
+              "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC05_DOS/DOSSample.sol",
+              "filename_short": "contracts/SC05_DOS/DOSSample.sol",
+              "is_dependency": false,
+              "lines": [
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "DOSSample",
+                "source_mapping": {
+                  "start": 57,
+                  "length": 278,
+                  "filename_relative": "contracts/SC05_DOS/DOSSample.sol",
+                  "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC05_DOS/DOSSample.sol",
+                  "filename_short": "contracts/SC05_DOS/DOSSample.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "distribute()"
+            }
+          },
+          {
+            "type": "node",
+            "name": "address(users[i]).transfer(1000000000000000000)",
+            "source_mapping": {
+              "start": 281,
+              "length": 35,
+              "filename_relative": "contracts/SC05_DOS/DOSSample.sol",
+              "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC05_DOS/DOSSample.sol",
+              "filename_short": "contracts/SC05_DOS/DOSSample.sol",
+              "is_dependency": false,
+              "lines": [
+                13
+              ],
+              "starting_column": 13,
+              "ending_column": 48
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "distribute",
+                "source_mapping": {
+                  "start": 188,
+                  "length": 145,
+                  "filename_relative": "contracts/SC05_DOS/DOSSample.sol",
+                  "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC05_DOS/DOSSample.sol",
+                  "filename_short": "contracts/SC05_DOS/DOSSample.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    11,
+                    12,
+                    13,
+                    14,
+                    15
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "DOSSample",
+                    "source_mapping": {
+                      "start": 57,
+                      "length": 278,
+                      "filename_relative": "contracts/SC05_DOS/DOSSample.sol",
+                      "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC05_DOS/DOSSample.sol",
+                      "filename_short": "contracts/SC05_DOS/DOSSample.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "distribute()"
+                }
+              }
+            }
+          }
+        ],
+        "description": "DOSSample.distribute() (contracts/SC05_DOS/DOSSample.sol#11-15) sends eth to arbitrary user\n\tDangerous calls:\n\t- address(users[i]).transfer(1000000000000000000) (contracts/SC05_DOS/DOSSample.sol#13)\n",
+        "markdown": "[DOSSample.distribute()](contracts/SC05_DOS/DOSSample.sol#L11-L15) sends eth to arbitrary user\n\tDangerous calls:\n\t- [address(users[i]).transfer(1000000000000000000)](contracts/SC05_DOS/DOSSample.sol#L13)\n",
+        "first_markdown_element": "contracts/SC05_DOS/DOSSample.sol#L11-L15",
+        "id": "234ddfa5baa8dfd7f4fe2fbf5b9e5d6f261a98bd0421d5b6ee01bc6b2403e3c4",
+        "check": "arbitrary-send-eth",
+        "impact": "High",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "distribute",
+            "source_mapping": {
+              "start": 188,
+              "length": 145,
+              "filename_relative": "contracts/SC05_DOS/DOSSample.sol",
+              "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC05_DOS/DOSSample.sol",
+              "filename_short": "contracts/SC05_DOS/DOSSample.sol",
+              "is_dependency": false,
+              "lines": [
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "DOSSample",
+                "source_mapping": {
+                  "start": 57,
+                  "length": 278,
+                  "filename_relative": "contracts/SC05_DOS/DOSSample.sol",
+                  "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC05_DOS/DOSSample.sol",
+                  "filename_short": "contracts/SC05_DOS/DOSSample.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "distribute()"
+            }
+          },
+          {
+            "type": "node",
+            "name": "address(users[i]).transfer(1000000000000000000)",
+            "source_mapping": {
+              "start": 281,
+              "length": 35,
+              "filename_relative": "contracts/SC05_DOS/DOSSample.sol",
+              "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC05_DOS/DOSSample.sol",
+              "filename_short": "contracts/SC05_DOS/DOSSample.sol",
+              "is_dependency": false,
+              "lines": [
+                13
+              ],
+              "starting_column": 13,
+              "ending_column": 48
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "distribute",
+                "source_mapping": {
+                  "start": 188,
+                  "length": 145,
+                  "filename_relative": "contracts/SC05_DOS/DOSSample.sol",
+                  "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC05_DOS/DOSSample.sol",
+                  "filename_short": "contracts/SC05_DOS/DOSSample.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    11,
+                    12,
+                    13,
+                    14,
+                    15
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "DOSSample",
+                    "source_mapping": {
+                      "start": 57,
+                      "length": 278,
+                      "filename_relative": "contracts/SC05_DOS/DOSSample.sol",
+                      "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC05_DOS/DOSSample.sol",
+                      "filename_short": "contracts/SC05_DOS/DOSSample.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "distribute()"
+                }
+              }
+            }
+          }
+        ],
+        "description": "DOSSample.distribute() (contracts/SC05_DOS/DOSSample.sol#11-15) has external calls inside a loop: address(users[i]).transfer(1000000000000000000) (contracts/SC05_DOS/DOSSample.sol#13)\n",
+        "markdown": "[DOSSample.distribute()](contracts/SC05_DOS/DOSSample.sol#L11-L15) has external calls inside a loop: [address(users[i]).transfer(1000000000000000000)](contracts/SC05_DOS/DOSSample.sol#L13)\n",
+        "first_markdown_element": "contracts/SC05_DOS/DOSSample.sol#L11-L15",
+        "id": "a6917fc95e3fa2f4c08f57a05261a797e573095e5cec09f2254bd75d9e10c085",
+        "check": "calls-loop",
+        "impact": "Low",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "pragma",
+            "name": "^0.8.0",
+            "source_mapping": {
+              "start": 32,
+              "length": 23,
+              "filename_relative": "contracts/SC05_DOS/DOSSample.sol",
+              "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC05_DOS/DOSSample.sol",
+              "filename_short": "contracts/SC05_DOS/DOSSample.sol",
+              "is_dependency": false,
+              "lines": [
+                2
+              ],
+              "starting_column": 1,
+              "ending_column": 24
+            },
+            "type_specific_fields": {
+              "directive": [
+                "solidity",
+                "^",
+                "0.8",
+                ".0"
+              ]
+            }
+          }
+        ],
+        "description": "Version constraint ^0.8.0 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)\n\t- FullInlinerNonExpressionSplitArgumentEvaluationOrder\n\t- MissingSideEffectsOnSelectorAccess\n\t- AbiReencodingHeadOverflowWithStaticArrayCleanup\n\t- DirtyBytesArrayToStorage\n\t- DataLocationChangeInInternalOverride\n\t- NestedCalldataArrayAbiReencodingSizeValidation\n\t- SignedImmutables\n\t- ABIDecodeTwoDimensionalArrayMemory\n\t- KeccakCaching.\nIt is used by:\n\t- ^0.8.0 (contracts/SC05_DOS/DOSSample.sol#2)\n",
+        "markdown": "Version constraint ^0.8.0 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)\n\t- FullInlinerNonExpressionSplitArgumentEvaluationOrder\n\t- MissingSideEffectsOnSelectorAccess\n\t- AbiReencodingHeadOverflowWithStaticArrayCleanup\n\t- DirtyBytesArrayToStorage\n\t- DataLocationChangeInInternalOverride\n\t- NestedCalldataArrayAbiReencodingSizeValidation\n\t- SignedImmutables\n\t- ABIDecodeTwoDimensionalArrayMemory\n\t- KeccakCaching.\nIt is used by:\n\t- [^0.8.0](contracts/SC05_DOS/DOSSample.sol#L2)\n",
+        "first_markdown_element": "contracts/SC05_DOS/DOSSample.sol#L2",
+        "id": "087af5c7353afff94a0a812eefa1a743c8801f907865d661eb5d7a3667f2fa40",
+        "check": "solc-version",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "node",
+            "name": "i < users.length",
+            "source_mapping": {
+              "start": 244,
+              "length": 16,
+              "filename_relative": "contracts/SC05_DOS/DOSSample.sol",
+              "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC05_DOS/DOSSample.sol",
+              "filename_short": "contracts/SC05_DOS/DOSSample.sol",
+              "is_dependency": false,
+              "lines": [
+                12
+              ],
+              "starting_column": 26,
+              "ending_column": 42
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "distribute",
+                "source_mapping": {
+                  "start": 188,
+                  "length": 145,
+                  "filename_relative": "contracts/SC05_DOS/DOSSample.sol",
+                  "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC05_DOS/DOSSample.sol",
+                  "filename_short": "contracts/SC05_DOS/DOSSample.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    11,
+                    12,
+                    13,
+                    14,
+                    15
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "DOSSample",
+                    "source_mapping": {
+                      "start": 57,
+                      "length": 278,
+                      "filename_relative": "contracts/SC05_DOS/DOSSample.sol",
+                      "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC05_DOS/DOSSample.sol",
+                      "filename_short": "contracts/SC05_DOS/DOSSample.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "distribute()"
+                }
+              }
+            }
+          }
+        ],
+        "description": "Loop condition i < users.length (contracts/SC05_DOS/DOSSample.sol#12) should use cached array length instead of referencing `length` member of the storage array.\n ",
+        "markdown": "Loop condition [i < users.length](contracts/SC05_DOS/DOSSample.sol#L12) should use cached array length instead of referencing `length` member of the storage array.\n ",
+        "first_markdown_element": "contracts/SC05_DOS/DOSSample.sol#L12",
+        "id": "f802ea396725b87ef9730f58c94277fa40618de9ddb3c926827e69c394ddf480",
+        "check": "cache-array-length",
+        "impact": "Optimization",
+        "confidence": "High"
+      }
+    ]
+  }
+}

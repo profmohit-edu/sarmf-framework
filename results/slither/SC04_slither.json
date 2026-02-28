@@ -1,0 +1,411 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "unsafeCall",
+            "source_mapping": {
+              "start": 92,
+              "length": 75,
+              "filename_relative": "contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+              "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+              "filename_short": "contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+              "is_dependency": false,
+              "lines": [
+                5,
+                6,
+                7
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "UncheckedCallSample",
+                "source_mapping": {
+                  "start": 57,
+                  "length": 112,
+                  "filename_relative": "contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+                  "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+                  "filename_short": "contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    4,
+                    5,
+                    6,
+                    7,
+                    8
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "unsafeCall(address)"
+            }
+          },
+          {
+            "type": "node",
+            "name": "target.call()",
+            "source_mapping": {
+              "start": 145,
+              "length": 15,
+              "filename_relative": "contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+              "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+              "filename_short": "contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+              "is_dependency": false,
+              "lines": [
+                6
+              ],
+              "starting_column": 9,
+              "ending_column": 24
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "unsafeCall",
+                "source_mapping": {
+                  "start": 92,
+                  "length": 75,
+                  "filename_relative": "contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+                  "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+                  "filename_short": "contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    5,
+                    6,
+                    7
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "UncheckedCallSample",
+                    "source_mapping": {
+                      "start": 57,
+                      "length": 112,
+                      "filename_relative": "contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+                      "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+                      "filename_short": "contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        4,
+                        5,
+                        6,
+                        7,
+                        8
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "unsafeCall(address)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "UncheckedCallSample.unsafeCall(address) (contracts/SC04_UncheckedCall/UncheckedCallSample.sol#5-7) ignores return value by target.call() (contracts/SC04_UncheckedCall/UncheckedCallSample.sol#6)\n",
+        "markdown": "[UncheckedCallSample.unsafeCall(address)](contracts/SC04_UncheckedCall/UncheckedCallSample.sol#L5-L7) ignores return value by [target.call()](contracts/SC04_UncheckedCall/UncheckedCallSample.sol#L6)\n",
+        "first_markdown_element": "contracts/SC04_UncheckedCall/UncheckedCallSample.sol#L5-L7",
+        "id": "32e9a7b9a7ae088246e15579583a676587fe3d13b22666358f2bf223bbcfa1cf",
+        "check": "unchecked-lowlevel",
+        "impact": "Medium",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "target",
+            "source_mapping": {
+              "start": 112,
+              "length": 14,
+              "filename_relative": "contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+              "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+              "filename_short": "contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+              "is_dependency": false,
+              "lines": [
+                5
+              ],
+              "starting_column": 25,
+              "ending_column": 39
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "unsafeCall",
+                "source_mapping": {
+                  "start": 92,
+                  "length": 75,
+                  "filename_relative": "contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+                  "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+                  "filename_short": "contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    5,
+                    6,
+                    7
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "UncheckedCallSample",
+                    "source_mapping": {
+                      "start": 57,
+                      "length": 112,
+                      "filename_relative": "contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+                      "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+                      "filename_short": "contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        4,
+                        5,
+                        6,
+                        7,
+                        8
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "unsafeCall(address)"
+                }
+              }
+            }
+          },
+          {
+            "type": "node",
+            "name": "target.call()",
+            "source_mapping": {
+              "start": 145,
+              "length": 15,
+              "filename_relative": "contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+              "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+              "filename_short": "contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+              "is_dependency": false,
+              "lines": [
+                6
+              ],
+              "starting_column": 9,
+              "ending_column": 24
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "unsafeCall",
+                "source_mapping": {
+                  "start": 92,
+                  "length": 75,
+                  "filename_relative": "contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+                  "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+                  "filename_short": "contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    5,
+                    6,
+                    7
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "UncheckedCallSample",
+                    "source_mapping": {
+                      "start": 57,
+                      "length": 112,
+                      "filename_relative": "contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+                      "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+                      "filename_short": "contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        4,
+                        5,
+                        6,
+                        7,
+                        8
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "unsafeCall(address)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "UncheckedCallSample.unsafeCall(address).target (contracts/SC04_UncheckedCall/UncheckedCallSample.sol#5) lacks a zero-check on :\n\t\t- target.call() (contracts/SC04_UncheckedCall/UncheckedCallSample.sol#6)\n",
+        "markdown": "[UncheckedCallSample.unsafeCall(address).target](contracts/SC04_UncheckedCall/UncheckedCallSample.sol#L5) lacks a zero-check on :\n\t\t- [target.call()](contracts/SC04_UncheckedCall/UncheckedCallSample.sol#L6)\n",
+        "first_markdown_element": "contracts/SC04_UncheckedCall/UncheckedCallSample.sol#L5",
+        "id": "17eeb1ee7100a36270a14a4a43c4949bb31d25ab4cfbeeaa7842ae70764f9f8e",
+        "check": "missing-zero-check",
+        "impact": "Low",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "pragma",
+            "name": "^0.8.0",
+            "source_mapping": {
+              "start": 32,
+              "length": 23,
+              "filename_relative": "contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+              "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+              "filename_short": "contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+              "is_dependency": false,
+              "lines": [
+                2
+              ],
+              "starting_column": 1,
+              "ending_column": 24
+            },
+            "type_specific_fields": {
+              "directive": [
+                "solidity",
+                "^",
+                "0.8",
+                ".0"
+              ]
+            }
+          }
+        ],
+        "description": "Version constraint ^0.8.0 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)\n\t- FullInlinerNonExpressionSplitArgumentEvaluationOrder\n\t- MissingSideEffectsOnSelectorAccess\n\t- AbiReencodingHeadOverflowWithStaticArrayCleanup\n\t- DirtyBytesArrayToStorage\n\t- DataLocationChangeInInternalOverride\n\t- NestedCalldataArrayAbiReencodingSizeValidation\n\t- SignedImmutables\n\t- ABIDecodeTwoDimensionalArrayMemory\n\t- KeccakCaching.\nIt is used by:\n\t- ^0.8.0 (contracts/SC04_UncheckedCall/UncheckedCallSample.sol#2)\n",
+        "markdown": "Version constraint ^0.8.0 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)\n\t- FullInlinerNonExpressionSplitArgumentEvaluationOrder\n\t- MissingSideEffectsOnSelectorAccess\n\t- AbiReencodingHeadOverflowWithStaticArrayCleanup\n\t- DirtyBytesArrayToStorage\n\t- DataLocationChangeInInternalOverride\n\t- NestedCalldataArrayAbiReencodingSizeValidation\n\t- SignedImmutables\n\t- ABIDecodeTwoDimensionalArrayMemory\n\t- KeccakCaching.\nIt is used by:\n\t- [^0.8.0](contracts/SC04_UncheckedCall/UncheckedCallSample.sol#L2)\n",
+        "first_markdown_element": "contracts/SC04_UncheckedCall/UncheckedCallSample.sol#L2",
+        "id": "8c385033c741c0e0b5cb241cf2bb090496ca8d515a683e47630f952edbc62ab7",
+        "check": "solc-version",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "unsafeCall",
+            "source_mapping": {
+              "start": 92,
+              "length": 75,
+              "filename_relative": "contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+              "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+              "filename_short": "contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+              "is_dependency": false,
+              "lines": [
+                5,
+                6,
+                7
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "UncheckedCallSample",
+                "source_mapping": {
+                  "start": 57,
+                  "length": 112,
+                  "filename_relative": "contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+                  "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+                  "filename_short": "contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    4,
+                    5,
+                    6,
+                    7,
+                    8
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "unsafeCall(address)"
+            }
+          },
+          {
+            "type": "node",
+            "name": "target.call()",
+            "source_mapping": {
+              "start": 145,
+              "length": 15,
+              "filename_relative": "contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+              "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+              "filename_short": "contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+              "is_dependency": false,
+              "lines": [
+                6
+              ],
+              "starting_column": 9,
+              "ending_column": 24
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "unsafeCall",
+                "source_mapping": {
+                  "start": 92,
+                  "length": 75,
+                  "filename_relative": "contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+                  "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+                  "filename_short": "contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    5,
+                    6,
+                    7
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "UncheckedCallSample",
+                    "source_mapping": {
+                      "start": 57,
+                      "length": 112,
+                      "filename_relative": "contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+                      "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+                      "filename_short": "contracts/SC04_UncheckedCall/UncheckedCallSample.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        4,
+                        5,
+                        6,
+                        7,
+                        8
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "unsafeCall(address)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "Low level call in UncheckedCallSample.unsafeCall(address) (contracts/SC04_UncheckedCall/UncheckedCallSample.sol#5-7):\n\t- target.call() (contracts/SC04_UncheckedCall/UncheckedCallSample.sol#6)\n",
+        "markdown": "Low level call in [UncheckedCallSample.unsafeCall(address)](contracts/SC04_UncheckedCall/UncheckedCallSample.sol#L5-L7):\n\t- [target.call()](contracts/SC04_UncheckedCall/UncheckedCallSample.sol#L6)\n",
+        "first_markdown_element": "contracts/SC04_UncheckedCall/UncheckedCallSample.sol#L5-L7",
+        "id": "de566fdf7b3773e24e8b8c82971b1e4d76d3b3cc29b5a2e60488f9bda290dc0a",
+        "check": "low-level-calls",
+        "impact": "Informational",
+        "confidence": "High"
+      }
+    ]
+  }
+}

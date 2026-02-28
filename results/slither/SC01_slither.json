@@ -1,0 +1,425 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "withdraw",
+            "source_mapping": {
+              "start": 227,
+              "length": 271,
+              "filename_relative": "contracts/SC01_Reentrancy/VulnerableBank.sol",
+              "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC01_Reentrancy/VulnerableBank.sol",
+              "filename_short": "contracts/SC01_Reentrancy/VulnerableBank.sol",
+              "is_dependency": false,
+              "lines": [
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "VulnerableBank",
+                "source_mapping": {
+                  "start": 57,
+                  "length": 443,
+                  "filename_relative": "contracts/SC01_Reentrancy/VulnerableBank.sol",
+                  "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC01_Reentrancy/VulnerableBank.sol",
+                  "filename_short": "contracts/SC01_Reentrancy/VulnerableBank.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "withdraw(uint256)"
+            }
+          },
+          {
+            "type": "node",
+            "name": "(success,None) = msg.sender.call{value: amount}()",
+            "source_mapping": {
+              "start": 352,
+              "length": 53,
+              "filename_relative": "contracts/SC01_Reentrancy/VulnerableBank.sol",
+              "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC01_Reentrancy/VulnerableBank.sol",
+              "filename_short": "contracts/SC01_Reentrancy/VulnerableBank.sol",
+              "is_dependency": false,
+              "lines": [
+                14
+              ],
+              "starting_column": 9,
+              "ending_column": 62
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "withdraw",
+                "source_mapping": {
+                  "start": 227,
+                  "length": 271,
+                  "filename_relative": "contracts/SC01_Reentrancy/VulnerableBank.sol",
+                  "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC01_Reentrancy/VulnerableBank.sol",
+                  "filename_short": "contracts/SC01_Reentrancy/VulnerableBank.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "VulnerableBank",
+                    "source_mapping": {
+                      "start": 57,
+                      "length": 443,
+                      "filename_relative": "contracts/SC01_Reentrancy/VulnerableBank.sol",
+                      "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC01_Reentrancy/VulnerableBank.sol",
+                      "filename_short": "contracts/SC01_Reentrancy/VulnerableBank.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "withdraw(uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "underlying_type": "external_calls"
+            }
+          },
+          {
+            "type": "node",
+            "name": "balances[msg.sender] -= amount",
+            "source_mapping": {
+              "start": 461,
+              "length": 30,
+              "filename_relative": "contracts/SC01_Reentrancy/VulnerableBank.sol",
+              "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC01_Reentrancy/VulnerableBank.sol",
+              "filename_short": "contracts/SC01_Reentrancy/VulnerableBank.sol",
+              "is_dependency": false,
+              "lines": [
+                17
+              ],
+              "starting_column": 9,
+              "ending_column": 39
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "withdraw",
+                "source_mapping": {
+                  "start": 227,
+                  "length": 271,
+                  "filename_relative": "contracts/SC01_Reentrancy/VulnerableBank.sol",
+                  "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC01_Reentrancy/VulnerableBank.sol",
+                  "filename_short": "contracts/SC01_Reentrancy/VulnerableBank.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "VulnerableBank",
+                    "source_mapping": {
+                      "start": 57,
+                      "length": 443,
+                      "filename_relative": "contracts/SC01_Reentrancy/VulnerableBank.sol",
+                      "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC01_Reentrancy/VulnerableBank.sol",
+                      "filename_short": "contracts/SC01_Reentrancy/VulnerableBank.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "withdraw(uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "underlying_type": "variables_written",
+              "variable_name": "balances"
+            }
+          }
+        ],
+        "description": "Reentrancy in VulnerableBank.withdraw(uint256) (contracts/SC01_Reentrancy/VulnerableBank.sol#11-18):\n\tExternal calls:\n\t- (success,None) = msg.sender.call{value: amount}() (contracts/SC01_Reentrancy/VulnerableBank.sol#14)\n\tState variables written after the call(s):\n\t- balances[msg.sender] -= amount (contracts/SC01_Reentrancy/VulnerableBank.sol#17)\n\tVulnerableBank.balances (contracts/SC01_Reentrancy/VulnerableBank.sol#5) can be used in cross function reentrancies:\n\t- VulnerableBank.balances (contracts/SC01_Reentrancy/VulnerableBank.sol#5)\n\t- VulnerableBank.deposit() (contracts/SC01_Reentrancy/VulnerableBank.sol#7-9)\n\t- VulnerableBank.withdraw(uint256) (contracts/SC01_Reentrancy/VulnerableBank.sol#11-18)\n",
+        "markdown": "Reentrancy in [VulnerableBank.withdraw(uint256)](contracts/SC01_Reentrancy/VulnerableBank.sol#L11-L18):\n\tExternal calls:\n\t- [(success,None) = msg.sender.call{value: amount}()](contracts/SC01_Reentrancy/VulnerableBank.sol#L14)\n\tState variables written after the call(s):\n\t- [balances[msg.sender] -= amount](contracts/SC01_Reentrancy/VulnerableBank.sol#L17)\n\t[VulnerableBank.balances](contracts/SC01_Reentrancy/VulnerableBank.sol#L5) can be used in cross function reentrancies:\n\t- [VulnerableBank.balances](contracts/SC01_Reentrancy/VulnerableBank.sol#L5)\n\t- [VulnerableBank.deposit()](contracts/SC01_Reentrancy/VulnerableBank.sol#L7-L9)\n\t- [VulnerableBank.withdraw(uint256)](contracts/SC01_Reentrancy/VulnerableBank.sol#L11-L18)\n",
+        "first_markdown_element": "contracts/SC01_Reentrancy/VulnerableBank.sol#L11-L18",
+        "id": "c6f7aab0e8877ca46f58df665e2d2c32a91026d0a645ea1d7f172a573c3e0e68",
+        "check": "reentrancy-eth",
+        "impact": "High",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "pragma",
+            "name": "^0.8.0",
+            "source_mapping": {
+              "start": 32,
+              "length": 23,
+              "filename_relative": "contracts/SC01_Reentrancy/VulnerableBank.sol",
+              "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC01_Reentrancy/VulnerableBank.sol",
+              "filename_short": "contracts/SC01_Reentrancy/VulnerableBank.sol",
+              "is_dependency": false,
+              "lines": [
+                2
+              ],
+              "starting_column": 1,
+              "ending_column": 24
+            },
+            "type_specific_fields": {
+              "directive": [
+                "solidity",
+                "^",
+                "0.8",
+                ".0"
+              ]
+            }
+          }
+        ],
+        "description": "Version constraint ^0.8.0 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)\n\t- FullInlinerNonExpressionSplitArgumentEvaluationOrder\n\t- MissingSideEffectsOnSelectorAccess\n\t- AbiReencodingHeadOverflowWithStaticArrayCleanup\n\t- DirtyBytesArrayToStorage\n\t- DataLocationChangeInInternalOverride\n\t- NestedCalldataArrayAbiReencodingSizeValidation\n\t- SignedImmutables\n\t- ABIDecodeTwoDimensionalArrayMemory\n\t- KeccakCaching.\nIt is used by:\n\t- ^0.8.0 (contracts/SC01_Reentrancy/VulnerableBank.sol#2)\n",
+        "markdown": "Version constraint ^0.8.0 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)\n\t- FullInlinerNonExpressionSplitArgumentEvaluationOrder\n\t- MissingSideEffectsOnSelectorAccess\n\t- AbiReencodingHeadOverflowWithStaticArrayCleanup\n\t- DirtyBytesArrayToStorage\n\t- DataLocationChangeInInternalOverride\n\t- NestedCalldataArrayAbiReencodingSizeValidation\n\t- SignedImmutables\n\t- ABIDecodeTwoDimensionalArrayMemory\n\t- KeccakCaching.\nIt is used by:\n\t- [^0.8.0](contracts/SC01_Reentrancy/VulnerableBank.sol#L2)\n",
+        "first_markdown_element": "contracts/SC01_Reentrancy/VulnerableBank.sol#L2",
+        "id": "3c5ff715f7fae4b982ee0eec3d1d4a895afc7dc7af6cbc886eedeab264d37843",
+        "check": "solc-version",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "withdraw",
+            "source_mapping": {
+              "start": 227,
+              "length": 271,
+              "filename_relative": "contracts/SC01_Reentrancy/VulnerableBank.sol",
+              "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC01_Reentrancy/VulnerableBank.sol",
+              "filename_short": "contracts/SC01_Reentrancy/VulnerableBank.sol",
+              "is_dependency": false,
+              "lines": [
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "VulnerableBank",
+                "source_mapping": {
+                  "start": 57,
+                  "length": 443,
+                  "filename_relative": "contracts/SC01_Reentrancy/VulnerableBank.sol",
+                  "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC01_Reentrancy/VulnerableBank.sol",
+                  "filename_short": "contracts/SC01_Reentrancy/VulnerableBank.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "withdraw(uint256)"
+            }
+          },
+          {
+            "type": "node",
+            "name": "(success,None) = msg.sender.call{value: amount}()",
+            "source_mapping": {
+              "start": 352,
+              "length": 53,
+              "filename_relative": "contracts/SC01_Reentrancy/VulnerableBank.sol",
+              "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC01_Reentrancy/VulnerableBank.sol",
+              "filename_short": "contracts/SC01_Reentrancy/VulnerableBank.sol",
+              "is_dependency": false,
+              "lines": [
+                14
+              ],
+              "starting_column": 9,
+              "ending_column": 62
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "withdraw",
+                "source_mapping": {
+                  "start": 227,
+                  "length": 271,
+                  "filename_relative": "contracts/SC01_Reentrancy/VulnerableBank.sol",
+                  "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC01_Reentrancy/VulnerableBank.sol",
+                  "filename_short": "contracts/SC01_Reentrancy/VulnerableBank.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "VulnerableBank",
+                    "source_mapping": {
+                      "start": 57,
+                      "length": 443,
+                      "filename_relative": "contracts/SC01_Reentrancy/VulnerableBank.sol",
+                      "filename_absolute": "/home/sweemo/sarmf-framework/contracts/SC01_Reentrancy/VulnerableBank.sol",
+                      "filename_short": "contracts/SC01_Reentrancy/VulnerableBank.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "withdraw(uint256)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "Low level call in VulnerableBank.withdraw(uint256) (contracts/SC01_Reentrancy/VulnerableBank.sol#11-18):\n\t- (success,None) = msg.sender.call{value: amount}() (contracts/SC01_Reentrancy/VulnerableBank.sol#14)\n",
+        "markdown": "Low level call in [VulnerableBank.withdraw(uint256)](contracts/SC01_Reentrancy/VulnerableBank.sol#L11-L18):\n\t- [(success,None) = msg.sender.call{value: amount}()](contracts/SC01_Reentrancy/VulnerableBank.sol#L14)\n",
+        "first_markdown_element": "contracts/SC01_Reentrancy/VulnerableBank.sol#L11-L18",
+        "id": "9a1e5226fc35e773497ef98e67facdc39960b8b4759bc2d5b5956a2d869d8d84",
+        "check": "low-level-calls",
+        "impact": "Informational",
+        "confidence": "High"
+      }
+    ]
+  }
+}
