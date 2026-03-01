@@ -32,7 +32,16 @@ Detected Issues:
 ## SC03 – Access Control
 Contract: AccessControlSample.sol
 Tool: Slither
+
 Detected Issues:
+
+1. Missing zero-address validation:
+   - changeOwner(address newOwner) does not check if newOwner == address(0).
+   - owner = newOwner executed without validation.
+   - May result in loss of contract control.
+
+2. Solidity version constraint warning:
+   - ^0.8.0 includes known compiler issues (as reported by Slither).
 - 
 
 ## SC04 – Unchecked Call
