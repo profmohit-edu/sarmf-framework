@@ -65,8 +65,20 @@ Detected Issues:
    - ^0.8.0 includes known compiler issues (as reported by Slither).
 - 
 
-## SC05 – Denial of Service
+## SC05 – Denial of Service (DoS)
 Contract: DOSSample.sol
 Tool: Slither
+
 Detected Issues:
+
+1. External transfer inside loop:
+   - address(users[i]).transfer(...) executed within for-loop.
+   - May lead to denial-of-service if one recipient reverts.
+   - Gas exhaustion risk in large arrays.
+
+2. Gas inefficiency warning:
+   - Loop condition uses users.length repeatedly instead of cached length.
+
+3. Solidity version constraint warning:
+   - ^0.8.0 includes known compiler issues (as reported by Slither).
 - 
