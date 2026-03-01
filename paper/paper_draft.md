@@ -84,3 +84,27 @@ The use of minimal, isolated vulnerability implementations ensures clarity in in
 ## 5. Conclusion
 
 This paper presented SARMF-Bench, a reproducible smart contract vulnerability benchmark consisting of five curated vulnerability classes. The benchmark enables deterministic static analysis experimentation and machine-readable artifact preservation. SARMF-Bench provides a structured foundation for future comparative evaluation of smart contract security tools and reproducible blockchain security research.
+
+---
+
+## 6. Related Work
+
+Smart contract security has been extensively studied in recent years. Static analysis tools such as Slither provide rule-based vulnerability detection tailored for Ethereum smart contracts. Symbolic execution tools like Mythril and Oyente have also been proposed to identify reentrancy and logic-level vulnerabilities.
+
+Prior empirical studies often evaluate detection tools using large contract corpora extracted from blockchain deployments. However, many such datasets lack controlled categorization and minimal reproducible implementations. The absence of lightweight benchmark suites limits structured tool comparison and controlled experimental validation.
+
+SARMF-Bench complements existing research by introducing a minimal, categorized, and version-controlled vulnerability benchmark focused specifically on reproducibility and deterministic evaluation.
+
+---
+
+## References
+
+[1] J. Feist, G. Grieco, and A. Groce, “Slither: A Static Analysis Framework for Smart Contracts,” IEEE Symposium on Security and Privacy Workshops, 2019.
+
+[2] L. Brent et al., “Vandal: A Scalable Security Analysis Framework for Smart Contracts,” arXiv preprint arXiv:1809.03981, 2018.
+
+[3] L. Luu et al., “Making Smart Contracts Smarter,” ACM CCS, 2016.
+
+[4] N. Atzei, M. Bartoletti, and T. Cimoli, “A Survey of Attacks on Ethereum Smart Contracts,” International Conference on Principles of Security and Trust, 2017.
+
+[5] ConsenSys Diligence, “Smart Contract Best Practices,” 2020.
