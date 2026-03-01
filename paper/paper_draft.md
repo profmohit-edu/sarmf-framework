@@ -89,8 +89,6 @@ This paper presented SARMF-Bench, a reproducible smart contract vulnerability be
 
 ## 6. Related Work
 
-## 6. Related Work
-
 Smart contract security has attracted significant research attention since the early identification of reentrancy vulnerabilities in Ethereum-based systems. Luu et al. [2] demonstrated large-scale contract analysis and highlighted common vulnerability classes in deployed smart contracts. Subsequent surveys, such as Atzei et al. [3], systematically categorized attack patterns affecting Ethereum contracts.
 
 Static analysis tools have emerged as practical approaches for vulnerability detection. Slither [1] provides rule-based analysis tailored to Solidity smart contracts, while SmartCheck [5] and Vandal [6] apply static pattern matching and intermediate representation techniques. Symbolic execution frameworks such as Mythril [7] and ZEUS [8] attempt deeper path exploration to identify logic-level flaws.
