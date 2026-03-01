@@ -89,11 +89,15 @@ This paper presented SARMF-Bench, a reproducible smart contract vulnerability be
 
 ## 6. Related Work
 
-Smart contract security has been extensively studied in recent years. Static analysis tools such as Slither provide rule-based vulnerability detection tailored for Ethereum smart contracts. Symbolic execution tools like Mythril and Oyente have also been proposed to identify reentrancy and logic-level vulnerabilities.
+## 6. Related Work
 
-Prior empirical studies often evaluate detection tools using large contract corpora extracted from blockchain deployments. However, many such datasets lack controlled categorization and minimal reproducible implementations. The absence of lightweight benchmark suites limits structured tool comparison and controlled experimental validation.
+Smart contract security has attracted significant research attention since the early identification of reentrancy vulnerabilities in Ethereum-based systems. Luu et al. [2] demonstrated large-scale contract analysis and highlighted common vulnerability classes in deployed smart contracts. Subsequent surveys, such as Atzei et al. [3], systematically categorized attack patterns affecting Ethereum contracts.
 
-SARMF-Bench complements existing research by introducing a minimal, categorized, and version-controlled vulnerability benchmark focused specifically on reproducibility and deterministic evaluation.
+Static analysis tools have emerged as practical approaches for vulnerability detection. Slither [1] provides rule-based analysis tailored to Solidity smart contracts, while SmartCheck [5] and Vandal [6] apply static pattern matching and intermediate representation techniques. Symbolic execution frameworks such as Mythril [7] and ZEUS [8] attempt deeper path exploration to identify logic-level flaws.
+
+While prior studies frequently evaluate tools using large-scale blockchain datasets, many lack controlled and minimal benchmark structures. SARMF-Bench differs by focusing on lightweight, categorized, and reproducible vulnerability implementations. Rather than emphasizing scale, this work emphasizes deterministic experimental configuration, artifact preservation, and structured evaluation.
+
+By positioning itself as a reproducible benchmark layer, SARMF-Bench complements existing detection frameworks and supports future comparative empirical research.
 
 ---
 
