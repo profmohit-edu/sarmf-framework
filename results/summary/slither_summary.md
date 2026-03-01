@@ -44,10 +44,25 @@ Detected Issues:
    - ^0.8.0 includes known compiler issues (as reported by Slither).
 - 
 
-## SC04 – Unchecked Call
+## SC04 – Unchecked External Call
 Contract: UncheckedCallSample.sol
 Tool: Slither
+
 Detected Issues:
+
+1. Ignored return value from low-level call:
+   - target.call() executed without checking success flag.
+   - May lead to silent execution failures.
+
+2. Missing zero-address validation:
+   - target address not validated before invocation.
+   - May result in unintended behavior.
+
+3. Low-level call usage warning (check: low-level-calls):
+   - Direct use of call() increases attack surface.
+
+4. Solidity version constraint warning:
+   - ^0.8.0 includes known compiler issues (as reported by Slither).
 - 
 
 ## SC05 – Denial of Service
