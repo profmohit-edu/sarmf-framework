@@ -14,18 +14,22 @@ Although tools such as Slither are widely used for vulnerability detection, empi
 
 This paper introduces SARMF-Bench, a lightweight and reproducible benchmark suite consisting of five curated smart contract vulnerability categories. Each contract is isolated, version-controlled, and evaluated under a deterministic static analysis configuration.
 
-The objective of SARMF-Bench is to provide:
+---
 
-- A categorized vulnerability dataset (SC01–SC05)
-- Deterministic static analysis execution
-- Machine-readable detection outputs
-- A reproducible experimental foundation for smart contract security research
+## 2. Contributions
+
+This paper makes the following contributions:
+
+- Introduces SARMF-Bench, a categorized smart contract vulnerability benchmark consisting of five controlled vulnerability classes.
+- Provides deterministic static analysis execution using version-locked tooling.
+- Preserves machine-readable JSON artifacts for reproducibility.
+- Establishes a lightweight evaluation framework suitable for structured empirical tool comparison.
 
 ---
 
-## 2. Benchmark Design
+## 3. Benchmark Design
 
-### 2.1 Vulnerability Categories
+### 3.1 Vulnerability Categories
 
 SARMF-Bench includes five curated vulnerability implementations:
 
@@ -39,7 +43,7 @@ Each contract is intentionally minimal to isolate the target vulnerability witho
 
 ---
 
-### 2.2 Repository Structure
+### 3.2 Repository Structure
 
 The benchmark follows a deterministic repository layout:
 
@@ -51,15 +55,15 @@ All components are version-controlled to ensure reproducibility. Static analysis
 
 ---
 
-## 3. Experimental Evaluation
+## 4. Experimental Evaluation
 
-### 3.1 Analysis Configuration
+### 4.1 Analysis Configuration
 
 All contracts were analyzed using **Slither v0.11.5** with Solidity version 0.8.x under Ubuntu Linux. The analysis was performed in a deterministic environment with explicit tool version locking. Results were exported as structured JSON outputs and archived under the `/results/slither/` directory.
 
 ---
 
-### 3.2 Detection Results
+### 4.2 Detection Results
 
 | Case | Vulnerability | Slither Detection | Observation |
 |------|--------------|------------------|------------|
@@ -71,7 +75,7 @@ All contracts were analyzed using **Slither v0.11.5** with Solidity version 0.8.
 
 ---
 
-## 4. Discussion
+## 5. Discussion
 
 The experimental results demonstrate that Slither effectively detects structural vulnerabilities such as reentrancy, unchecked calls, access-control flaws, and denial-of-service patterns. These findings confirm the capability of rule-based static analysis in identifying common architectural weaknesses in smart contracts.
 
@@ -81,13 +85,19 @@ The use of minimal, isolated vulnerability implementations ensures clarity in in
 
 ---
 
-## 5. Conclusion
+## Reproducibility Statement
+
+All benchmark contracts, analysis outputs, and documentation artifacts are publicly available in the SARMF-Bench repository. The experimental environment uses explicitly version-locked static analysis tooling to ensure deterministic replication of results.
+
+---
+
+## 6. Conclusion
 
 This paper presented SARMF-Bench, a reproducible smart contract vulnerability benchmark consisting of five curated vulnerability classes. The benchmark enables deterministic static analysis experimentation and machine-readable artifact preservation. SARMF-Bench provides a structured foundation for future comparative evaluation of smart contract security tools and reproducible blockchain security research.
 
 ---
 
-## 6. Related Work
+## 7. Related Work
 
 Smart contract security has attracted significant research attention since the early identification of reentrancy vulnerabilities in Ethereum-based systems. Luu et al. [2] demonstrated large-scale contract analysis and highlighted common vulnerability classes in deployed smart contracts. Subsequent surveys, such as Atzei et al. [3], systematically categorized attack patterns affecting Ethereum contracts.
 
