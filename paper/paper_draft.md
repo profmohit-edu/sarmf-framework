@@ -99,12 +99,22 @@ SARMF-Bench complements existing research by introducing a minimal, categorized,
 
 ## References
 
-[1] J. Feist, G. Grieco, and A. Groce, “Slither: A Static Analysis Framework for Smart Contracts,” IEEE Symposium on Security and Privacy Workshops, 2019.
+[1] J. Feist, G. Grieco, and A. Groce, “Slither: A Static Analysis Framework for Smart Contracts,” IEEE Symposium on Security and Privacy Workshops (SPW), 2019.
 
-[2] L. Brent et al., “Vandal: A Scalable Security Analysis Framework for Smart Contracts,” arXiv preprint arXiv:1809.03981, 2018.
+[2] L. Luu et al., “Making Smart Contracts Smarter,” ACM Conference on Computer and Communications Security (CCS), 2016.
 
-[3] L. Luu et al., “Making Smart Contracts Smarter,” ACM CCS, 2016.
+[3] N. Atzei, M. Bartoletti, and T. Cimoli, “A Survey of Attacks on Ethereum Smart Contracts,” International Conference on Principles of Security and Trust (POST), 2017.
 
-[4] N. Atzei, M. Bartoletti, and T. Cimoli, “A Survey of Attacks on Ethereum Smart Contracts,” International Conference on Principles of Security and Trust, 2017.
+[4] K. Delmolino et al., “Step by Step Towards Creating a Safe Smart Contract: Lessons and Insights from a Cryptocurrency Lab,” Financial Cryptography and Data Security, 2016.
 
-[5] ConsenSys Diligence, “Smart Contract Best Practices,” 2020.
+[5] M. Tikhomirov et al., “SmartCheck: Static Analysis of Ethereum Smart Contracts,” IEEE/ACM International Workshop on Emerging Trends in Software Engineering for Blockchain, 2018.
+
+[6] L. Brent et al., “Vandal: A Scalable Security Analysis Framework for Smart Contracts,” arXiv:1809.03981, 2018.
+
+[7] B. Mueller, “Mythril: Security Analysis Tool for Ethereum Smart Contracts,” 2018.
+
+[8] S. Kalra et al., “ZEUS: Analyzing Safety of Smart Contracts,” NDSS Symposium, 2018.
+
+[9] ConsenSys Diligence, “Smart Contract Best Practices,” 2020.
+
+[10] Ethereum Foundation, “Solidity Documentation and Security Considerations,” 2023.
