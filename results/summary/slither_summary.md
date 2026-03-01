@@ -15,11 +15,18 @@ Detected Issues:
 3. Solidity version constraint risk
    - ^0.8.0 includes known compiler issues# SARMF – Slither Benchmark Summary
 
-
 ## SC02 – Integer Overflow
 Contract: OverflowSample.sol
 Tool: Slither
+
 Detected Issues:
+
+1. No arithmetic overflow vulnerability detected.
+   - Solidity version ^0.8.0 includes built-in overflow protection.
+   - Arithmetic operations are automatically checked for overflow/underflow.
+
+2. Solidity version constraint warning:
+   - ^0.8.0 contains known compiler issues (as reported by Slither).
 - 
 
 ## SC03 – Access Control
