@@ -1,8 +1,8 @@
-# SARMF: A Reproducible Smart Contract Security Engineering Framework
+SARMF-Bench: A Reproducible Smart Contract Vulnerability Benchmark for Static Analysis Evaluation
 
 ## Abstract
 
-SARMF (Smart Contract Automated Remediation and Mitigation Framework) provides a structured, reproducible pipeline for Ethereum smart contract vulnerability detection, normalization, mitigation, and validation. The framework integrates static and symbolic analysis tools and preserves all artifacts under DOI-indexed releases to enable independent verification.
+This paper presents SARMF-Bench, a structured and reproducible benchmark of curated smart contract vulnerabilities designed for evaluating static analysis tools. The benchmark consists of five categorized vulnerability classes: reentrancy, arithmetic overflow, access-control weakness, unchecked external calls, and denial-of-service patterns. Each contract is version-controlled and analyzed using Slither v0.11.5 under a deterministic environment. The resulting machine-readable outputs enable systematic evaluation of detection behavior and reproducibility validation. SARMF-Bench provides a lightweight yet structured foundation for empirical smart contract security experimentation.
 
 ## 1. Introduction
 
