@@ -12,6 +12,31 @@ Primary DOI:
 https://dx.doi.org/10.17504/protocols.io.bp216eyxdgqe/v1
 
 ---
+## Project highlight
+
+Over the last few months I have been quietly building SARMF‑Bench from scratch as my flagship smart contract security project – a complete benchmark, toolchain and reproducibility pipeline, fully version‑controlled and archived with DOIs. This is not just a paper; it is an end‑to‑end research artifact that can be dropped into other people’s experiments and courses.
+
+Excited to share SARMF‑Bench, a deterministic smart contract vulnerability benchmark that I have designed and implemented as a single‑author research project.
+
+SARMF‑Bench currently includes 5 SWC‑aligned, minimal Solidity contracts:
+
+- **SC01 – Reentrancy (SWC‑107)**
+- **SC02 – Integer overflow (SWC‑101)**
+- **SC03 – Access‑control weakness (SWC‑105)**
+- **SC04 – Unchecked external calls (SWC‑104)**
+- **SC05 – Denial‑of‑service via unbounded loops (SWC‑113)**
+
+Each contract is evaluated with **Slither v0.11.5** under a version‑locked environment, and the complete JSON detection artifacts are preserved to enable fully reproducible static‑analysis experiments.
+
+**Resources**
+
+- GitHub (code + JSON artifacts): https://github.com/profmohit-edu/sarmf-framework  
+- Software DOI: `10.5281/zenodo.18754015`  
+- Reproducibility protocol DOI: `10.17504/protocols.io.bp216eyxdgqe/v1`  
+
+The SARMF‑Bench paper is currently under review at the **Science of Blockchain Conference (SBC) 2026, Stanford**. I’m happy to collaborate with anyone interested in using this benchmark to evaluate static analyzers, fuzzers, or AI‑based security tools.
+
+
 
 ## Objectives
 
