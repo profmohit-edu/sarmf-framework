@@ -78,8 +78,10 @@ If you use this framework, please cite:
 
 Mohit Tiwari.  
 SARMF: Smart Contract Automated Remediation and Mitigation Framework.  
-DOI: 10.17504/protocols.io.bp216eyxdgqe/v1  
+DOI: 10.17504/protocols.io.bp216eyxdgqe/v1
 
+Software Heritage persistent revision (SWHID):
+swh:1:rev:0577284fd94ca54a74316ff87921e043798e1edb
 ---
 
 ## License
