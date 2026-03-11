@@ -1,5 +1,15 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18754015.svg)](https://doi.org/10.5281/zenodo.18754015)
+# SARMF-Bench
 
+Official DOI Records:
+
+- IEEE DataPort: https://doi.org/10.21227/zj4q-p934
+- Zenodo: https://doi.org/10.5281/zenodo.18754015
+- Harvard Dataverse: https://doi.org/10.7910/DVN/0SP3OO
+- Mendeley Data: https://doi.org/10.17632/kd3vcpnn9v.1
+- OSF: https://doi.org/10.17605/OSF.IO/EJWDC
+- Protocol: https://doi.org/10.17504/protocols.io.bp2l6eyxdgqe/v1
+
+  
 # SARMF – Smart Contract Automated Remediation and Mitigation Framework
 
 ## Overview
