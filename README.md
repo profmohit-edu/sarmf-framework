@@ -50,7 +50,16 @@ Each contract is evaluated with **Slither v0.11.5** under a version‑locked env
 
 The SARMF‑Bench paper is currently under review at the **Science of Blockchain Conference (SBC) 2026, Stanford**. I’m happy to collaborate with anyone interested in using this benchmark to evaluate static analyzers, fuzzers, or AI‑based security tools.
 
+## Why Use SARMF-Bench Instead of Existing Benchmarks?
 
+| Feature | SARMF-Bench | Typical Smart Contract Datasets |
+|----------|--------------|----------------------------------|
+| SWC-aligned taxonomy | Yes (SWC-107, 101, 105, 104, 113) | Partial |
+| Deterministic design | Yes | Often uncontrolled |
+| Version-locked toolchain | Yes | Rare |
+| Machine-readable JSON outputs | Yes | Sometimes |
+| Cross-archived DOI infrastructure | Yes (Zenodo + IEEE + Dataverse + OSF + Mendeley) | Rare |
+| Single-author reproducible framework | Yes | Usually collaborative datasets |
 
 ## Objectives
 
