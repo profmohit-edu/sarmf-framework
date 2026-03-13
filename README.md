@@ -61,6 +61,16 @@ The SARMF‑Bench paper is currently under review at the **Science of Blockchain
 | Cross-archived DOI infrastructure | Yes (Zenodo + IEEE + Dataverse + OSF + Mendeley) | Rare |
 | Single-author reproducible framework | Yes | Usually collaborative datasets |
 
+
+## Quick Start: Benchmark Your Security Tool in 3 Steps
+
+1. Clone repository
+2. Run your analyzer or fuzzer on the 5 SWC-aligned contracts
+3. Compare outputs with provided Slither JSON artifacts
+
+SARMF-Bench is intentionally compact to allow rapid benchmarking and reproducibility validation.
+
+
 ## Objectives
 
 • Deterministic environment reproducibility  
