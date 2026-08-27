@@ -1,122 +1,41 @@
-Official SARMF-Bench landing page:
-https://profmohit-edu.github.io/sarmf-framework/
+# SARMF — Smart Contract Automated Remediation and Mitigation Framework
 
+SARMF is a bounded working model for traceable Solidity vulnerability analysis, deterministic remediation and same-rule validation. It preserves the DOI-backed SARMF-Bench research record while adding an executable remediation workflow.
 
-# SARMF-Bench
+## Implemented end-to-end workflow
 
-Official DOI Records:
+`Solidity input → deterministic SWC-107 finding → location/category → bounded CEI patch → before/after comparison → same-rule re-analysis → mitigation status`
 
-- IEEE DataPort: https://doi.org/10.21227/zj4q-p934
-- Zenodo: https://doi.org/10.5281/zenodo.18754015
-- Harvard Dataverse: https://doi.org/10.7910/DVN/0SP3OO
-- Mendeley Data: https://doi.org/10.17632/kd3vcpnn9v.1
-- OSF: https://doi.org/10.17605/OSF.IO/EJWDC
-- Protocol: https://doi.org/10.17504/protocols.io.bp2l6eyxdgqe/v1
+The implemented analyzer detects a supported syntactic form in which an external value call occurs before a state effect in the same Solidity function. The automated patch moves the precisely identified state-effect statement before the call only when the statements are in a bounded straight-line form. It refuses automatic reordering when intervening control flow makes the transformation ambiguous.
 
-  
-# SARMF – Smart Contract Automated Remediation and Mitigation Framework
+The words **deterministic finding**, **automatic patch**, **recommendation**, and **validation** are presented separately in the interface. No generative-AI output is used in this release.
 
-## Overview
+## Integrity and scope
 
-SARMF is a DOI-indexed reproducible security engineering framework designed for systematic vulnerability detection, taxonomy alignment, automated remediation, and adversarial validation of Ethereum-compatible smart contracts.
+- `MITIGATED_WITHIN_SUPPORTED_RULE` means re-analysis no longer detects the original SWC-107 syntactic pattern.
+- It is not a proof that the entire contract is secure or behaviorally equivalent under every environment.
+- The recommendation to consider a reentrancy guard is not automatically applied.
+- The original SARMF-Bench landing page is preserved at `research-assets/sarmf-bench-landing-2026-03.html`.
+- Existing `CITATION.cff` and `citation.bib` remain intact.
 
-This repository provides the engineering structure, workflow definition, and reproducibility scaffolding aligned with the published SARMF protocol.
+## Run locally
 
-Primary DOI:
-https://dx.doi.org/10.17504/protocols.io.bp216eyxdgqe/v1
+Open `index.html` in a browser, or serve the repository with any static web server.
 
----
-## Project highlight
+## Tests
 
-Over the last few months I have been quietly building SARMF‑Bench from scratch as my flagship smart contract security project – a complete benchmark, toolchain and reproducibility pipeline, fully version‑controlled and archived with DOIs. This is not just a paper; it is an end‑to‑end research artifact that can be dropped into other people’s experiments and courses.
+```bash
+node --test tests/core.test.js
+```
 
-Excited to share SARMF‑Bench, a deterministic smart contract vulnerability benchmark that I have designed and implemented as a single‑author research project.
+The tests cover detection and location, bounded patch generation, successful re-analysis, a safe Checks-Effects-Interactions example, and refusal of an ambiguous transformation.
 
-SARMF‑Bench currently includes 5 SWC‑aligned, minimal Solidity contracts:
+## Existing research record
 
-- **SC01 – Reentrancy (SWC‑107)**
-- **SC02 – Integer overflow (SWC‑101)**
-- **SC03 – Access‑control weakness (SWC‑105)**
-- **SC04 – Unchecked external calls (SWC‑104)**
-- **SC05 – Denial‑of‑service via unbounded loops (SWC‑113)**
+The repository previously documented SARMF-Bench and its SWC-aligned benchmark methodology. Existing archival identifiers are retained, including Zenodo `10.5281/zenodo.18754015`, IEEE DataPort `10.21227/zj4q-p934`, Harvard Dataverse `10.7910/DVN/0SP3OO`, Mendeley Data `10.17632/kd3vcpnn9v.1`, OSF `10.17605/OSF.IO/EJWDC`, and the protocol DOI cited in the original repository.
 
-Each contract is evaluated with **Slither v0.11.5** under a version‑locked environment, and the complete JSON detection artifacts are preserved to enable fully reproducible static‑analysis experiments.
+## Maintainer
 
-**Resources**
-
-- GitHub (code + JSON artifacts): https://github.com/profmohit-edu/sarmf-framework  
-- Software DOI: `10.5281/zenodo.18754015`  
-- Reproducibility protocol DOI: `10.17504/protocols.io.bp216eyxdgqe/v1`  
-
-The SARMF‑Bench paper is currently under review at the **Science of Blockchain Conference (SBC) 2026, Stanford**. I’m happy to collaborate with anyone interested in using this benchmark to evaluate static analyzers, fuzzers, or AI‑based security tools.
-
-## Why Use SARMF-Bench Instead of Existing Benchmarks?
-
-| Feature | SARMF-Bench | Typical Smart Contract Datasets |
-|----------|--------------|----------------------------------|
-| SWC-aligned taxonomy | Yes (SWC-107, 101, 105, 104, 113) | Partial |
-| Deterministic design | Yes | Often uncontrolled |
-| Version-locked toolchain | Yes | Rare |
-| Machine-readable JSON outputs | Yes | Sometimes |
-| Cross-archived DOI infrastructure | Yes (Zenodo + IEEE + Dataverse + OSF + Mendeley) | Rare |
-| Single-author reproducible framework | Yes | Usually collaborative datasets |
-
-
-## Quick Start: Benchmark Your Security Tool in 3 Steps
-
-1. Clone repository
-2. Run your analyzer or fuzzer on the 5 SWC-aligned contracts
-3. Compare outputs with provided Slither JSON artifacts
-
-SARMF-Bench is intentionally compact to allow rapid benchmarking and reproducibility validation.
-
-
-## Objectives
-
-• Deterministic environment reproducibility  
-• Multi-tool static vulnerability detection  
-• SWC-aligned vulnerability normalization  
-• Rule-based automated patch generation  
-• Behavioral verification and adversarial validation  
-• Audit-grade reporting and traceability  
-
----
-
-## Architecture Layers
-
-1. Environment Standardization Layer  
-2. Static Analysis Aggregation Layer  
-3. Vulnerability Taxonomy Mapping  
-4. Automated Remediation Engine  
-5. Adversarial Validation Pipeline  
-6. Audit Reporting Module  
-
----
-
-## Reproducibility Principles
-
-SARMF enforces:
-
-• Toolchain determinism  
-• Version-locked execution  
-• Controlled dependency resolution  
-• Traceable remediation diffs  
-• Measurable security delta validation  
-
----
-
-## Citation
-
-If you use this framework, please cite:
-
-Mohit Tiwari.  
-SARMF: Smart Contract Automated Remediation and Mitigation Framework.  
-DOI: 10.17504/protocols.io.bp216eyxdgqe/v1
-
-Software Heritage persistent revision (SWHID):
-swh:1:rev:0577284fd94ca54a74316ff87921e043798e1edb
----
-
-## License
-
-Research and academic usage permitted with attribution.
+Mohit Tiwari  
+Department of Computer Science and Engineering  
+Bharati Vidyapeeth's College of Engineering, New Delhi

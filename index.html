@@ -1,140 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>SARMF-Bench | Reproducible Smart Contract Vulnerability Benchmark Dataset</title>
-
-<meta name="google-site-verification" content="vS8lu_oWrXbmZQt6avjZqo1UajWi_d_j3Mc7d9mGyac" />
-
-<meta name="description" content="SARMF-Bench is a deterministic, DOI-backed smart contract vulnerability benchmark aligned with SWC taxonomy for reproducible evaluation of static analyzers, fuzzers, and AI-based blockchain security tools.">
-
-<meta name="keywords" content="SARMF-Bench, smart contracts, blockchain security, Solidity, static analysis, vulnerability benchmark, SWC-107, SWC-101, SWC-105, SWC-104, SWC-113, reentrancy, integer overflow, access control weakness, unchecked external call, denial-of-service, Slither, reproducible research, Mohit Tiwari">
-
-<meta name="citation_title" content="SARMF-Bench: Reproducible Smart Contract Vulnerability Benchmark Dataset">
-<meta name="citation_author" content="Mohit Tiwari">
-<meta name="citation_publication_date" content="2026">
-<meta name="citation_doi" content="10.5281/zenodo.18754015">
-<meta name="citation_technical_report_institution" content="Bharati Vidyapeeth's College of Engineering, Delhi">
-<meta name="citation_public_url" content="https://profmohit-edu.github.io/sarmf-framework/">
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Dataset",
-  "name": "SARMF-Bench: Reproducible Smart Contract Vulnerability Benchmark Dataset",
-  "description": "A deterministic benchmark of Solidity contracts aligned with canonical SWC vulnerability classes for controlled evaluation of static analyzers, fuzzers, symbolic execution engines, and AI-based smart contract security systems.",
-  "url": "https://profmohit-edu.github.io/sarmf-framework/",
-  "identifier": [
-    "https://doi.org/10.5281/zenodo.18754015",
-    "https://doi.org/10.21227/zj4q-p934",
-    "https://doi.org/10.7910/DVN/0SP3OO",
-    "https://doi.org/10.17632/kd3vcpnn9v.1",
-    "https://doi.org/10.17605/OSF.IO/EJWDC"
-  ],
-  "creator": {
-    "@type": "Person",
-    "name": "Mohit Tiwari",
-    "sameAs": [
-      "https://orcid.org/0000-0003-1836-3451",
-      "https://scholar.google.com/citations?user=ZFRPBBcAAAAJ",
-      "https://www.scopus.com/authid/detail.uri?authorId=57222016881",
-      "https://www.researchgate.net/profile/Mohit-Tiwari-6"
-    ],
-    "affiliation": {
-      "@type": "Organization",
-      "name": "Bharati Vidyapeeth's College of Engineering, Delhi"
-    }
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Zenodo and IEEE DataPort"
-  },
-  "license": "https://creativecommons.org/licenses/by/4.0/",
-  "keywords": [
-    "smart contract security",
-    "blockchain security",
-    "SWC-107",
-    "SWC-101",
-    "SWC-105",
-    "SWC-104",
-    "SWC-113",
-    "Solidity",
-    "static analysis",
-    "vulnerability benchmark",
-    "reproducible research"
-  ]
-}
-</script>
-
-<style>
-body {
-    font-family: Arial, sans-serif;
-    max-width: 950px;
-    margin: 40px auto;
-    line-height: 1.7;
-}
-pre {
-    background: #f4f4f4;
-    padding: 15px;
-}
-h1, h2 {
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 6px;
-}
-a {
-    color: #0056b3;
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
-}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="SARMF working model: deterministic SWC-107 analysis, bounded remediation, before/after comparison and validation.">
+  <title>SARMF | Smart Contract Automated Remediation and Mitigation Framework</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-<h1>SARMF-Bench</h1>
-
-<p><strong>SARMF-Bench</strong> is a deterministic, reproducible smart contract vulnerability benchmark aligned with canonical SWC taxonomy classes:</p>
-
-<ul>
-<li>SWC-107 – Reentrancy</li>
-<li>SWC-101 – Integer Overflow</li>
-<li>SWC-105 – Access Control Weakness</li>
-<li>SWC-104 – Unchecked External Calls</li>
-<li>SWC-113 – Denial-of-Service via Unbounded Loop</li>
-</ul>
-
-<h2>Primary DOIs</h2>
-
-<p>Zenodo: <a href="https://doi.org/10.5281/zenodo.18754015">10.5281/zenodo.18754015</a></p>
-<p>IEEE DataPort: <a href="https://doi.org/10.21227/zj4q-p934">10.21227/zj4q-p934</a></p>
-
-<h2>Additional Archival Records</h2>
-
-<p>Harvard Dataverse: <a href="https://doi.org/10.7910/DVN/0SP3OO">10.7910/DVN/0SP3OO</a></p>
-<p>Mendeley Data: <a href="https://doi.org/10.17632/kd3vcpnn9v.1">10.17632/kd3vcpnn9v.1</a></p>
-<p>OSF Project: <a href="https://doi.org/10.17605/OSF.IO/EJWDC">10.17605/OSF.IO/EJWDC</a></p>
-
-<h2>GitHub Repository</h2>
-
-<p><a href="https://github.com/profmohit-edu/sarmf-framework">Source Code</a></p>
-
-<h2>How to Cite</h2>
-
-<pre>
-Tiwari, M. (2026). SARMF-Bench: Reproducible Smart Contract Vulnerability Benchmark Dataset. 
-Zenodo. https://doi.org/10.5281/zenodo.18754015
-
-IEEE DataPort DOI: https://doi.org/10.21227/zj4q-p934
-</pre>
-
-<h2>Maintainer</h2>
-<p>Mohit Tiwari</p>
-<p>Department of Computer Science and Engineering</p>
-<p>Bharati Vidyapeeth's College of Engineering, Delhi</p>
-
+  <header>
+    <div><p class="eyebrow">BVCOE · CSE · Working Model</p><h1>SARMF</h1><p>Smart Contract Automated Remediation and Mitigation Framework</p></div>
+    <div class="identity">Mohit Tiwari<small>Department of Computer Science and Engineering<br>Bharati Vidyapeeth's College of Engineering, New Delhi</small></div>
+  </header>
+  <main>
+    <section class="scope"><div><h2>Bounded automated remediation you can inspect</h2><p>This demonstrator implements one explicit end-to-end mechanism: deterministic detection of an external value call followed by a state update, a bounded Checks-Effects-Interactions reorder, and re-analysis with the same rule.</p></div><div class="state"><span>Pipeline status</span><strong id="pipeline-state">ANALYZED</strong></div></section>
+    <div class="notice"><b>Scope:</b> SWC-107 syntactic rule only. A “mitigated” result means the matching rule was cleared; it is not a claim that the complete contract is secure.</div>
+    <section class="workspace">
+      <div class="panel input-panel"><div class="panel-title"><h2>1 · Solidity contract input</h2><button id="load-sample" class="secondary">Load vulnerable sample</button></div><textarea id="contract-input" spellcheck="false" aria-label="Solidity contract input"></textarea><div class="actions"><button id="analyze" class="secondary">Analyze only</button><button id="remediate" class="primary">Analyze → patch → validate</button></div></div>
+      <div class="panel"><h2>2 · Deterministic analyzer findings</h2><p id="analysis-status" class="status"></p><div id="findings"></div></div>
+    </section>
+    <section id="results" hidden>
+      <div class="panel"><h2>3 · Remediation output</h2><p id="patch-kind" class="patch-kind"></p><p><b>Automatic mechanism:</b> reorder the precisely identified state-effect statement before the external interaction. <b>Recommendation:</b> additionally assess a reentrancy guard and broader behavioral tests.</p></div>
+      <div class="comparison"><div class="panel"><h2>4A · Before</h2><pre id="before-code" class="code-block"></pre></div><div class="panel"><h2>4B · Patched</h2><pre id="after-code" class="code-block"></pre></div></div>
+      <div class="panel"><div class="panel-title"><h2>5 · Re-analysis and mitigation status</h2><button id="download" class="secondary">Download audit JSON</button></div><div id="validation"></div></div>
+    </section>
+    <details class="research"><summary>Preserved SARMF-Bench research and DOI records</summary><p>This working model extends the repository while preserving its benchmark identity and citation files. Existing archival records include Zenodo <a href="https://doi.org/10.5281/zenodo.18754015">10.5281/zenodo.18754015</a>, IEEE DataPort <a href="https://doi.org/10.21227/zj4q-p934">10.21227/zj4q-p934</a>, Harvard Dataverse <a href="https://doi.org/10.7910/DVN/0SP3OO">10.7910/DVN/0SP3OO</a>, Mendeley Data <a href="https://doi.org/10.17632/kd3vcpnn9v.1">10.17632/kd3vcpnn9v.1</a>, OSF <a href="https://doi.org/10.17605/OSF.IO/EJWDC">10.17605/OSF.IO/EJWDC</a>, and the reproducibility protocol cited in the repository README.</p></details>
+  </main>
+  <footer>Deterministic source analysis · Bounded automated patch · Same-rule re-analysis · Audit-grade scope disclosure</footer>
+  <script src="core.js"></script><script src="app.js"></script>
 </body>
 </html>
